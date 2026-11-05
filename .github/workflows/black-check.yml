@@ -1,0 +1,12 @@
+name: Python Black Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  black:
+    uses: cloudTech-pulse/tmp/.github/workflows/python-black-check.yml@main
